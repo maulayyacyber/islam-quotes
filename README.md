@@ -1,0 +1,2 @@
+# islam-quotes
+Initial Commit
