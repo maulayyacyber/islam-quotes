@@ -42,7 +42,7 @@
                                 <thead>
                                 <tr>
                                     <th class="text-center" style="color: #000;">No.</th>
-                                    <th class="text-center" style="color: #000;"><i class="fa fa-user-folder"></i> NAMA CATEGORY</th>
+                                    <th class="text-center" style="color: #000;"><i class="fa fa-folder"></i> NAMA CATEGORY</th>
                                     <th class="text-center" style="color: #000;"><i class="fa fa-calendar-o"></i> UPDATED AT</th>
                                     <th class="text-center" style="color: #000;"><i class="fa fa-cogs"></i> OPTIONS</th>
                                 </tr>
@@ -58,7 +58,7 @@
                                         <td><?php echo $hasil->nama_category ?></td>
                                         <td> <?php echo $this->apps->tgl_jam_indo_no_hari($hasil->updated_at) ?></td>
                                         <td class="text-center">
-                                            <a class="badge badge-success" style="font-family: Roboto;font-weight: 400;background-color: #358420;" data-toggle="tooltip" data-placement="top" title="Edit" href="'.base_url().'apps/category/edit/'.$this->encryption->encode($hasil->id_category).'"><i class="fa fa-pencil"></i> Edit</a>
+                                            <a class="badge badge-success" style="font-family: Roboto;font-weight: 400;background-color: #358420;" data-toggle="tooltip" data-placement="top" title="Edit" href="<?php echo base_url() ?>apps/category/edit/<?php echo $this->encryption->encode($hasil->id_category) ?>"><i class="fa fa-pencil"></i> Edit</a>
                                         </td>
                                     </tr>
                                     <?php

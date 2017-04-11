@@ -24,8 +24,7 @@
                             <b><span style="font-size: 16px">Mutiara Islam Apps</span></b>
                         </p>
                         <p>
-                            Kami menghadirkan sebuah aplikasi yang kita namakan Perpus Desa, dimana dengan
-                            aplikasi ini apapun kegiatan pengelolaan perpustakaan desa akan termudahkan, memonitor kondisi buku-buku di perpus, serta mengenalkan ke masyarakat luas bahwa untuk meminjam buku di perpustakaan desa Anda sekarang sangatlah mudah karena Aplikasi ini.
+                            aplikasi yang menyediakan informasi tentang islam berupa kumpulan dari hadist, alqur'an dan kata - kata motivasi dan berupa gambar
                         </p>
                         <p>
                             <b><span style="font-size: 16px">jika punya pertanyaan bisa hubungi kami melalui :</span></b>

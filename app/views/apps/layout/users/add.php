@@ -52,8 +52,8 @@
                             <input type="email" class="form-control" name="email" placeholder="Alamat Email">
                         </div>
                         <div class="submit" style="margin-bottom: 7px">
-                            <button type="submit" class="btn btn-success btn-save btn-fill"><i class="fa fa-save"></i> Simpan</button>
-                            <button type="reset" class="btn btn-warning btn-reset btn-fill"><i class="fa fa-repeat"></i> Reset</button>
+                            <button type="submit" class="btn  bg-olive btn-flat btn-save btn-fill"><i class="fa fa-save"></i> Simpan</button>
+                            <button type="reset" class="btn bg-orange btn-flat btn-fill"><i class="fa fa-repeat"></i> Reset</button>
                         </div>
                         <?php echo form_close(); ?>
                         </div>
