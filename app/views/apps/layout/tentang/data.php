@@ -24,8 +24,13 @@
                             <b><span style="font-size: 16px">Mutiara Islam Apps</span></b>
                         </p>
                         <p>
-                            aplikasi yang menyediakan informasi tentang islam berupa kumpulan dari hadist, alqur'an dan kata - kata motivasi dan berupa gambar
+                            MUTIARA ISLAM adalah aplikasi yang menyediakan gambar tentang hadist, ayat-ayat suci alqu'an dan motivasi tentang islam, untuk menggunakan aplikasi ini anda bisa mengunjungi laman resmi dari Mutiara Islam di <a href="<?php echo base_url() ?>">http://mutiara-islam.id/</a> atau anda juga bisa mengunduh aplikasi resmi kami di bawah.
                         </p>
+                        <br>
+                        <a href="<?php echo base_url() ?>download/"> <img src="<?php echo base_url() ?>resources/images/play-google.png" style="width: 200px" data-toggle="tooltip" data-placement="top" title="Download on Google Play"> </a>
+                        <a href="<?php echo base_url() ?>download/"> <img src="<?php echo base_url() ?>resources/images/apps-store.png" style="width: 200px" data-toggle="tooltip" data-placement="top" title="Download on Apps Store"> </a>
+                        <br>
+                    <br>
                         <p>
                             <b><span style="font-size: 16px">jika punya pertanyaan bisa hubungi kami melalui :</span></b>
                         </p>
