@@ -4,13 +4,15 @@ Repository for development mutiara islam apps
 
     version : Beta Development
 
-Back end Developer 
+Back-end and Front-end Developer 
 
     Fika Ridaul Maulayya <ridaulmaulayya@gmail.com>
     
 Mobile Developer
 
     Abdul Basith
+    
+    Alwi Zen
 
 official website
     
