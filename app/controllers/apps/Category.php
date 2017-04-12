@@ -79,7 +79,7 @@ class Category extends CI_Controller
                 $this->pagination->initialize($config);
 
                 $data = array(
-                    'title' => 'Users',
+                    'title' => 'Category',
                     'category' => TRUE,
                     'data_category' => $this->apps->search_index_category(strip_tags($keyword), $limit, $offset),
                     'paging' => $this->pagination->create_links()

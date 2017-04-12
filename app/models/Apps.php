@@ -110,7 +110,7 @@ class Apps extends CI_Model
     }
 
 
-    /* fungsi user */
+    /* fungsi category */
     function count_category()
     {
         return $this->db->get('tbl_category');
@@ -167,6 +167,74 @@ class Apps extends CI_Model
         $id_category  =  array('id_category'=> $id_category);
         return $this->db->get_where('tbl_category', $id_category);
     }
+
+
+    /* fungsi quotes */
+
+    function select_category()
+    {
+       $this->db->order_by('nama_category ASC');
+       return $this->db->get('tbl_category');
+     }
+
+    function count_quotes()
+    {
+        return $this->db->get('tbl_quotes');
+    }
+
+    function index_quotes($halaman,$batas)
+    {
+        $query = "SELECT a.id_quotes,a.judul_quotes,a.category_id,a.slug,a.images,a.created_at,a.user_id, b.id_category, b.nama_category, c.id_user,c.nama_user FROM tbl_quotes as a JOIN tbl_category as b JOIN tbl_users as c ON a.category_id = b.id_category AND a.user_id = c.id_user ORDER BY a.id_quotes DESC limit $halaman, $batas";
+        return $this->db->query($query);
+    }
+
+    function search_quotes_json()
+    {
+        $query = $this->db->get('tbl_quotes');
+        return $query->result();
+    }
+
+    function total_search_quotes($keyword)
+    {
+        $query = $this->db->like('judul_quotes',$keyword)->get('tbl_quotes');
+
+        if($query->num_rows() > 0)
+        {
+            return $query->num_rows();
+        }
+        else
+        {
+            return NULL;
+        }
+    }
+
+    public function search_index_quotes($keyword,$limit,$offset)
+    {
+        $query = $this->db->select('SELECT a.id_quotes,a.judul_quotes,a.category_id,a.slug,a.images,a.created_at,a.user_id, b.id_category, b.nama_category, c.id_user,c.nama_user')
+            ->from('tbl_quotes a')
+            ->join('tbl_category b','a.category_id = b.id_category')
+            ->join('tbl_users c','a.user_id = c.id_user')
+            ->like('a.judul_quotes', $keyword)
+            ->limit($limit,$offset)
+            ->order_by('a.id_quotes','DESC')
+            ->get();
+
+        if($query->num_rows() > 0)
+        {
+            return $query;
+        }
+        else
+        {
+            return NULL;
+        }
+    }
+
+    function edit_quotes($id_quotes)
+    {
+        $id_quotes  =  array('id_quotes'=> $id_quotes);
+        return $this->db->get_where('tbl_quotes', $id_quotes);
+    }
+
 
 
     function tgl_time_indo($date=null){
