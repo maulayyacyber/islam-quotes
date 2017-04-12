@@ -28,6 +28,7 @@
 <script src="<?php echo base_url() ?>resources/backend/dist/js/ajax_validation.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url() ?>resources/backend/dist/js/demo.js"></script>
+<script src="<?php echo base_url() ?>resources/backend/dist/js/lightbox.min.js"></script>
 <script>
 
     $('[data-toggle="tooltip"]').tooltip();
@@ -36,6 +37,12 @@
 
     <?php if(isset($js_ready)) { echo $js_ready; } ?>
 
+    lightbox.option({
+        'showImageNumberLabel': false,
+        'wrapAround'          : false,
+        'alwaysShowNavOnTouchDevices' : false,
+        'disableScrolling'      : false
+    })
 </script>
 </body>
 </html>

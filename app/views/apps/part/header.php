@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="<?php echo base_url() ?>resources/backend/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>resources/backend/dist/css/AdminLTE.min.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>resources/backend/dist/css/toastr.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>resources/backend/dist/css/lightbox.min.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>resources/backend/dist/css/skins/_all-skins.min.css">
     <![endif]-->
 </head>

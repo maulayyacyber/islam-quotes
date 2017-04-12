@@ -59,7 +59,7 @@
                                         <td class="text-center"><?php echo $no++; ?></td>
                                         <td><?php echo $hasil->judul_quotes ?></td>
                                         <td><?php echo $hasil->nama_category ?></td>
-                                        <td><?php echo $hasil->images ?></td>
+                                        <td><a href="<?php echo base_url() ?>resources/images/quotes/<?php echo $hasil->images ?>" data-lightbox="image-1" data-title="<?php echo $hasil->judul_quotes ?>"> <?php echo $hasil->images ?></a></td>
                                         <td> <?php echo $this->apps->tgl_jam_indo_no_hari($hasil->created_at) ?></td>
                                         <td class="text-center">
                                             <a class="badge badge-success" style="font-family: Roboto;font-weight: 400;background-color: #358420;" data-toggle="tooltip" data-placement="top" title="Edit" href="<?php echo base_url() ?>apps/quotes/edit/<?php echo $this->encryption->encode($hasil->id_quotes) ?>"><i class="fa fa-pencil"></i> Edit</a>
