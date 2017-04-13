@@ -364,4 +364,25 @@ class Quotes extends CI_Controller
         }
     }
 
+    public function delete()
+    {
+        if($this->apps->apps_id())
+        {
+            $id     = $this->encryption->decode($this->uri->segment(4));
+            $query  = $this->db->query("SELECT id_quotes, images FROM tbl_quotes WHERE id_quotes ='$id'")->row();
+            unlink(realpath('resources/images/quotes/'.$query->thumbnail));
+            unlink(realpath('resources/images/quotes/thumb/'.$query->thumbnail));
+            $key['id_quotes'] = $id;
+            $this->db->delete("tbl_quotes", $key);
+            $this->session->set_flashdata('notif', '<div class="alert alert-success alert-dismissible" style="font-family:Roboto">
+			                                                    <i class="fa fa-check"></i> Data Berhasil Dihapus.
+			                                                </div>');
+            //redirect halaman
+            redirect('apps/quotes?source=delete&utf8=✓');
+        }else{
+            show_404();
+            return FALSE;
+        }
+    }
+
 }

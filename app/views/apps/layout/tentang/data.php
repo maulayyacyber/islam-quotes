@@ -35,9 +35,9 @@
                             <b><span style="font-size: 16px">jika punya pertanyaan bisa hubungi kami melalui :</span></b>
                         </p>
                         <p>
-                            <i class="fa fa-envelope"></i> Alamat Email : support@mutiara-islam.id<br><br>
-                            <i class="fa fa-whatsapp"></i> SMS / WA : +62 857-8585-2224 </span><br><br>
-                            <i class="fa fa-globe"></i> Website : http://mutiara-silam.id
+                            <i class="fa fa-envelope"></i>  support@mutiara-islam.id<br><br>
+                            <i class="fa fa-whatsapp"></i>  +62 857-8585-2224 </span><br><br>
+                            <i class="fa fa-globe"></i>  http://mutiara-silam.id
                         </p>
                     </div>
                     <!-- /.box-body -->

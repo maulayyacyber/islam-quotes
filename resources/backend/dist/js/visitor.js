@@ -1,5 +1,5 @@
 // deklarasi path url host
-var url = window.location.origin+"/~maulayyacyber/mtt/apps/";
+var url = window.location.origin+"/~maulayyacyber/mutiara-islam/apps/";
 
 // Get data chart
 function GetToday(tgl)
@@ -77,7 +77,7 @@ function show_chart(text, kat, total)
             x: -20 //center
         },
         subtitle: {
-            text: 'Source: http://www.permakes.org',
+            text: 'Source: http://www.mutiara-islam.id',
             x: -20
         },
         xAxis: {

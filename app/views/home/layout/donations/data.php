@@ -44,7 +44,7 @@
                     <img src="<?php echo base_url() ?>resources/images/PayPal.png" style="width: 140px" data-toggle="tooltip" data-placement="top" title="Donations on Paypal">
                     <hr>
                     A/N : FIKA RIDAUL MAULAYYA<br>
-                    EMAIL : maulayyacyber@gmail.com
+                    MAULAYYACYBER@GMAIL.COM
                 </div>
             </div>
         </div>

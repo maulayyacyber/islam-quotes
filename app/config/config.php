@@ -444,7 +444,13 @@ $config['csrf_token_name'] = 'csrf_token';
 $config['csrf_cookie_name'] = 'csrf_cookie';
 $config['csrf_expire'] = 7200;
 $config['csrf_regenerate'] = TRUE;
-$config['csrf_exclude_uris'] = array();
+$config['csrf_exclude_uris'] = array(
+    'apps/dashboard/get_chart_today',
+    'apps/dashboard/get_chart_week',
+    'apps/dashboard/get_chart_month',
+    'apps/dashboard/get_chart_all',
+    'home/load_more'
+    );
 
 /*
 |--------------------------------------------------------------------------
