@@ -54,6 +54,8 @@ $route['404_override']          = '';
 $route['translate_uri_dashes']  = FALSE;
 
 
+$route['p/(:any)'] = "home/p/$1";
+
 //get api method
 
 /* json format */

@@ -1,6 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+
+//path apps
+
+//$config['base_apps'] =
+
 /*
 |--------------------------------------------------------------------------
 | Base Site URL

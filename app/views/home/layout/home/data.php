@@ -1,13 +1,6 @@
 <div class="container" style="margin-top: 70px">
-    <!-- Example row of columns -->
     <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-            <div id="results"></div>
-            <div class="load_more">
-                <div class="more" style="text-align: center">
-                        <img style="display:none;margin: 0 auto;" class="loader_image" src="<?php echo base_url('resources/images/loader.svg') ?>" style="width: 5px;height: 5px">
-                </div>
-            </div>
-        </div>
+            <div ng-view></div>
     </div>
 </div>
+
